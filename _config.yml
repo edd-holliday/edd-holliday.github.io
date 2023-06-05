@@ -24,7 +24,7 @@ email: eddholliday@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
   A collection of my projects related to finance, ESG, and geopolitics. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://edd-holliday.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  edd-holliday
 linkedin_username: edward-holliday-552357a7
@@ -33,6 +33,12 @@ linkedin_username: edward-holliday-552357a7
 theme: minima
 plugins:
   - jekyll-feed
+
+kramdown:
+  math_engine: mathjax
+
+minima:
+  skin: solarized-light
 
 
 # Exclude from processing.
