@@ -40,7 +40,7 @@ main {
 
 .timeline {
   position: relative;
-  margin-left: 30px;
+  margin-left: 60px;
 }
 
 .timeline::before {
