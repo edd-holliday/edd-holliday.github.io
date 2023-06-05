@@ -24,12 +24,42 @@ main {
   margin-bottom: 20px;
 }
 
-#timeline {
-  list-style-type: none;
+.timeline {
+  position: relative;
+  margin-left: 30px;
 }
 
-#timeline li {
-  margin-bottom: 10px;
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background-color: #000;
+}
+
+.timeline-block {
+  width: 90%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.timeline-date {
+  position: absolute;
+  left: -30px;
+  width: 25px;
+  height: 25px;
+  background-color: #ccc;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .project {
