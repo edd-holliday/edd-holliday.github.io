@@ -1,19 +1,19 @@
 education:
-  - degree: Leadership and Management, Level 5 Certificate
-    university: Chartered Managers Institute
+  - degree: "Leadership and Management, Level 5 Certificate"
+    university: "Chartered Managers Institute"
 
-  - degree: International Rural Development, Post Graduate Diploma
-    university: Universtity of Cirencester
+  - degree: "International Rural Development, Post Graduate Diploma"
+    university: "Universtity of Cirencester"
 
-  - degree: Computer Science, BSc (Hons)
-    universtity: Durham
+  - degree: "Computer Science, BSc (Hons)""
+    universtity: "Durham"
 
 work_experience:
-  - job_title: Senior Research Associate
-    company: Metrea Management
-    duration: Feb 2021 - Apr 2023
+  - job_title: "Senior Research Associate"
+    company: "Metrea Management"
+    duration: "Feb 2021 - Apr 2023"
     achievements: 
-    - "Devised cost-effective aerial firefighting solution through data-driven market and supply analysis, technology comparison, and pricing modeling. Resulted in new business unit. Conducted product analysis, identified a key software risk in a US company. Wrote Investment Memorandum, resulting in USD 10M acquisition and potential acquisition of second company. Identified and presented a strategic opportunity for investment from Metrea's VC BU into Fossa Systems."
+      - "Devised cost-effective aerial firefighting solution through data-driven market and supply analysis, technology comparison, and pricing modeling. Resulted in new business unit. Conducted product analysis, identified a key software risk in a US company. Wrote Investment Memorandum, resulting in USD 10M acquisition and potential acquisition of second company. Identified and presented a strategic opportunity for investment from Metrea's VC BU into Fossa Systems."
 
   - job_title: "Military Strategic Effects Advisor"
     company: "Ministry of Defence, London"
@@ -43,22 +43,22 @@ work_experience:
     company: "38 Brigade, Northern Ireland"
     duration: "May 2016 - Dec 2016"
     achievements: 
-    - "Monitored and controlled military activity and provided military support to the Police in Northern Ireland. This included the analysis of I planned, controlled, monitored and reported on the use of defence support to the civil authorities in the collection and destruction of hazardous chemical from 55 schools across Northern Ireland."
+      - "Monitored and controlled military activity and provided military support to the Police in Northern Ireland. This included the analysis of I planned, controlled, monitored and reported on the use of defence support to the civil authorities in the collection and destruction of hazardous chemical from 55 schools across Northern Ireland."
 
   - job_title: "Infantry Platoon Commander"
     company: "4th Battalion, The Rifles, Aldershot"
     duration: "Jul 2015 - May 2016"
     achievements: 
-    - "Prepared and managed a team of 30 people to operate in a multitude of environments. This included career and training management and having full responsibility for their welfare and discipline. Training for and leading a platoon on exercise in the jungle in Belize."
+      - "Prepared and managed a team of 30 people to operate in a multitude of environments. This included career and training management and having full responsibility for their welfare and discipline. Training for and leading a platoon on exercise in the jungle in Belize."
 
   - job_title: "Regimental Signals Officer"
-    company: "Household Cavalry Regiment, Windsorquote("Regimental Signals Officer\n\n\nHousehold Cavalry", "a strategic level communications system.")
+    company: "Household Cavalry Regiment, Windsor"
     duration: "Sep 2014 - Jul 2015"
     achievements: 
-    - "Planned and managed personnel and equipment to allow a unit of 500 people and 100 vehicles to reliably and securely communicate over a variety of spectrums at distance, while maintaining manoeuvrability across a battlefield. Achieving the highest level report for the planning and delivery of communications during a training exercise."
+      - "Planned and managed personnel and equipment to allow a unit of 500 people and 100 vehicles to reliably and securely communicate over a variety of spectrums at distance, while maintaining manoeuvrability across a battlefield. Achieving the highest level report for the planning and delivery of communications during a training exercise."
 
   - job_title: "Reconnaissance Troop Leader"
     company: "Household Cavalry Regiment, London & Windsor"
     duration: "Jan 2012 - Sep 2014"
     achievements: 
-    - "Led, prepared and managed a small team and fleet of vehicles to operate independently at distance, anticipating the needs of their commander and delivering assessment on activity in unfamiliar environments. This included the career management and development of junior soldiers and responsibility for their discipline and welfare; and at time management of 35 horses and soldiers for State Ceremonial occasions. Training and leading a Reconnaissance Troop on exercise in Canada. Involvement in all major Ceremonial Parades in London in 2013."
+      - "Led, prepared and managed a small team and fleet of vehicles to operate independently at distance, anticipating the needs of their commander and delivering assessment on activity in unfamiliar environments. This included the career management and development of junior soldiers and responsibility for their discipline and welfare; and at time management of 35 horses and soldiers for State Ceremonial occasions. Training and leading a Reconnaissance Troop on exercise in Canada. Involvement in all major Ceremonial Parades in London in 2013."
