@@ -76,6 +76,23 @@ main {
   border-radius: 5px;
 }
 
+.timeline-block.army .timeline-content {
+  background-color: #7CFC00; /* Light green */
+}
+
+.timeline-block.civ .timeline-content {
+  background-color: #1E90FF; /* Dodger blue */
+}
+
+.timeline-block.life .timeline-content {
+  background-color: #800080; /* Purple */
+}
+
+.timeline-block.education .timeline-content {
+  background-color: #FFFF00; /* Yellow */
+}
+
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
