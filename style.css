@@ -16,6 +16,20 @@ header h1 {
   margin: 0;
 }
 
+header nav {
+  margin: 10px 0;
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
 main {
   margin: 15px;
 }
@@ -62,10 +76,16 @@ main {
   border-radius: 5px;
 }
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
 .project {
   border: 1px solid #ccc;
   padding: 10px;
-  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 footer {
