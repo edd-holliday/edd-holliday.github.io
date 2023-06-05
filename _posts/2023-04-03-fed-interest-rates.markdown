@@ -5,8 +5,8 @@ date:   2023-04-03 12:25:44 +0100
 categories: interest rates, predictions, machine learning
 ---
 
-# Overview of Project
-This is a project based on the [FED Watch Tool][https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html].
+
+This is a project based on the [FED Watch Tool](https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html).
 
 The motivation for this project is to develop an understanding to build a similar tool for the Bank of England.
 
