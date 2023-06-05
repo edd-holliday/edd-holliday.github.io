@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "FED Interest Rate Predictions"
+date:   2023-04-03 12:25:44 +0100
+categories: systems, banks, systemic risk
+---
+
+# Overview
+This project was born out of reading 'The 10 Equations that Rule the World' by David Sumpter. Chapter 5 of the book delves into the idea of the 'influence equation', which shows shows how a network settles against certain weights with the weight of each being the influence of each node. This is the heart of Google’s search algorithm. 
+
+At the time I was reading the book the banks SVB and Credit Suisse were in crisis and there was lots of discussion about banking system failure and systemic risk. From immenant banking systemin collapse to 'all is fine'. However, no where could I find how you might measure systemic risk in the banking system. 
+
+When Credit Suisse was bought out by UBS, there were reports of its shareholders having to take a hair cut and a list of institutional investors was circulated from twitter. this led me to thinknig how to model the banking system as a graph and finding the stationary distribution.
+
+# Systemic Risk
+Risk in a connected netwrok arises fromt compromised nodes and their connections.
+
+# Modelling the Banking System.
+
+## Assumptions
+- Banks and instititional investors invest in other banks.
+- A banks collapse has a negative impact on the assets of its investors
+- Large investors selling an asset can have a negative impact on the price of that asset.
+- A bank and an Institional Investor are nodes. There are $n$ nodes in the graph
+- The investments between nodes are directional edges.
+- The banking sector is a directional graph $G(V,E)$ where:
+    - $V R^n$ is the set of banks or institional investors
+    - $E R^nxn$ is the edge set denoting the which nodes are connected together through invesmtents and holdings.
+    - The edge set comprimises elements
+    - The graph is directional, such that $Eij = Eji$
+- In the simple model the network is represented by an ($n x n$) adjacency matrix with all elements in ${0,1}$. 
+
+## Data
+13F - Holding reports give the details of the large investors holdings.
+
+# Notation
+Assume that the banking system comprises n no
+
+## Simple Model 
+With these assumption the banking sector can be modelled as a directional graph, with banks and institutional investors as nodes and their investments as edges. The simple model allows for some initial analysis of the graph, to find the density etc. With historical data from the SEC it is possible to understand how the banking sector has changed over time against these metrics. Theorertical methods can then be used to understand the risk of a local shock propogates throughout a given system due to contagion effects. A definition of a resilient network and criteria allows the classification of netwroks as resilient or non-resilient.
+
+## Indepth model
+
+This takes the simple model a step further, using the idea of the 'Influencer equation' and PageRank alogrithm to identify which banks are most at risk of causing contagion within the system. It creates weights.
