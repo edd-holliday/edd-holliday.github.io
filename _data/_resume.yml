@@ -1,0 +1,16 @@
+education:
+  - degree: Masters in Computer Science
+    university: University of XYZ
+    city: XYZ City
+    duration: September 2023 - Present
+
+  - degree: Bachelors in Computer Science
+    university: University of ABC
+    city: ABC City
+    duration: September 2019 - June 2023
+
+work_experience:
+  - job_title: Software Developer
+    company: Company 123
+    city: City 123
+    duration: June 2023 - Present
