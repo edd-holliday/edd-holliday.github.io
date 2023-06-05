@@ -37,8 +37,8 @@ plugins:
 kramdown:
   math_engine: mathjax
 
-minima:
-  skin: solarized-light
+
+show_excerpts: true
 
 
 # Exclude from processing.
