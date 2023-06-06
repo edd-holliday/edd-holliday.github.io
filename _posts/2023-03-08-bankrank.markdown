@@ -23,14 +23,14 @@ Risk in a connected netwrok arises fromt compromised nodes and their connections
 - Banks and instititional investors invest in other banks.
 - A banks collapse has a negative impact on the assets of its investors
 - Large investors selling an asset can have a negative impact on the price of that asset.
-- A bank and an Institional Investor are nodes. There are $` n `$ nodes in the graph
+- A bank and an Institional Investor are nodes. There are $n$ nodes in the graph
 - The investments between nodes are directional edges.
-- The banking sector is a directional graph $` G(V,E) `$ where:
+- The banking sector is a directional graph $G(V,E)$ where:
   - $V R^n$ is the set of banks or institional investors
-  - $E R^nxn$ is the edge set denoting the which nodes are connected together through invesmtents and holdings.
+  - $E R^{n x n}$ is the edge set denoting the which nodes are connected together through invesmtents and holdings.
   - The edge set comprimises elements
-  - The graph is directional, such that $` Eij = Eji `$
-- In the simple model the network is represented by an ($` n x n `$) adjacency matrix with all elements in $`{0,1}`$.
+  - The graph is directional, such that $E_{ij} \ne E_{ji}$
+- In the simple model the network is represented by an $(n x n)$ adjacency matrix with all elements in ${0,1}$.
 
 ## Data
 
