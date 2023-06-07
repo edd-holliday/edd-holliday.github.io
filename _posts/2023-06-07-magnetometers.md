@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Kakovskaya HPP and Magnetometers"
-date:   2023-07-06 12:25:44 +0100
+date:   2023-06-07 12:25:44 +0100
 categories: geopolitics, signals analysis, python
 use_math: true
 ---
