@@ -137,9 +137,11 @@ In the next step, we'll define a function that applies a correlation analysis to
 
 The Pearson correlation coefficient between two vectors $x$ and $y$ is defined as:
 
+{% raw %}
 $$
 r = \frac{{\sum {(x_i - \bar{x})(y_i - \bar{y})}}}{{\sqrt{\sum {(x_i - \bar{x})^2}\sum {(y_i - \bar{y})^2}}}}
 $$
+{% endraw %}
 
 Where:
 
