@@ -135,15 +135,16 @@ This block of code calculates the deviation from the minimum for each component 
 
 In the next step, we'll define a function that applies a correlation analysis to our data. This involves a sliding window approach, comparing a portion of the collected data to our Idealised Explosion Pattern. It also identifies potential anomalies where the correlation is above a defined sensitivity level.
 
-The Pearson correlation coefficient between two vectors $\(x\)$ and $\(y\)$ is defined as:
+The Pearson correlation coefficient between two vectors $x$ and $y$ is defined as:
 
 $$
-\[ r = \frac{{\sum {(x_i - \bar{x})(y_i - \bar{y})}}}{{\sqrt{\sum {(x_i - \bar{x})^2}\sum {(y_i - \bar{y})^2}}}} \]
+r = \frac{{\sum {(x_i - \bar{x})(y_i - \bar{y})}}}{{\sqrt{\sum {(x_i - \bar{x})^2}\sum {(y_i - \bar{y})^2}}}}
 $$
+
 Where:
 
-- $\(x_i\)$ and $\(y_i\)$ are individual data points in vectors $\(x\)$ and $\(y\)$,
-- $\(\bar{x}\)$ and $\(\bar{y}\)$ are the means of vectors $\(x\)$ and $\(y\)$,
+- $x_i$ and $y_i$ are individual data points in vectors $x$ and $y$,
+- $\bar{x}$ and $\bar{y}$ are the means of vectors $x$ and $y$,
 - The summations run over the entire length of the vectors.
 
 In the context of our code, x and y are the window of data and the Idealised Explosion Pattern, respectively. This coefficient ranges from -1 to 1, indicating the degree of linear correlation between the vectors. A correlation close to 1 signifies a strong positive correlation. In this case we use absolute values, as the direction of the vectors we are comparing is not important.
