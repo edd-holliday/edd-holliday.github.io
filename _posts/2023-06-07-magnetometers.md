@@ -202,16 +202,12 @@ The results are then processed in steps that correspond to the sample size. For 
 
 Using the code above you are able to loop through serveral ground stations to collect and analysis their data. Below are several ploteed charts showing this.
 
-Here is an example of a clickable image that opens in a new tab:
+*Figure 1: Magnetic Anomalies at the Kakhovska Hydro Power Plant*
 
 <a href="/assets/mag_anomolies_Kakhovska_HPP.png" target="_blank">
-  <img src="/assets/mag_anomolies_Kakhovska_HPP.png" alt="Kakhovska HPP Magnetic Anomalies" width="500" height="600">
+  <img src="/assets/mag_anomolies_Kakhovska_HPP.png" alt="Kakhovska HPP Magnetic Anomalies" width="700" height="400">
 </a>
 <p style="text-align: center;"><i>Figure 1: Magnetic Anomalies at the Kakhovska Hydro Power Plant</i></p>
-
-
-![Kakhovska HPP Magnetic Anomalies](/assets/mag_anomolies_Kakhovska_HPP.png)
-*Figure 1: Magnetic Anomalies at the Kakhovska Hydro Power Plant*
 
 Plotting th echarts this way has allowed us to easily analysis and fuse data from several locations. The East Component (`By`) charts clearly show a short sharp anomly at around  06 June 00:45 UTC. This is around the time that an explosion, be it mines, or something else causing the collapse of the Kakhovska HPP. The anomoly is also detected in the Vertical Direction (Bz).
 
