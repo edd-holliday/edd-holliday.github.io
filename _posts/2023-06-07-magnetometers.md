@@ -202,6 +202,14 @@ The results are then processed in steps that correspond to the sample size. For 
 
 Using the code above you are able to loop through serveral ground stations to collect and analysis their data. Below are several ploteed charts showing this.
 
+Here is an example of a clickable image that opens in a new tab:
+
+<a href="/assets/mag_anomolies_Kakhovska_HPP.png" target="_blank">
+  <img src="/assets/mag_anomolies_Kakhovska_HPP.png" alt="Kakhovska HPP Magnetic Anomalies" width="500" height="600">
+</a>
+<p style="text-align: center;"><i>Figure 1: Magnetic Anomalies at the Kakhovska Hydro Power Plant</i></p>
+
+
 ![Kakhovska HPP Magnetic Anomalies](/assets/mag_anomolies_Kakhovska_HPP.png)
 *Figure 1: Magnetic Anomalies at the Kakhovska Hydro Power Plant*
 
