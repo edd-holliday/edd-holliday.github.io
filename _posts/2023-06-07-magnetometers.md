@@ -10,12 +10,22 @@ A project building on work of [Richard Cordaro](https://twitter.com/rrichcord) u
 
 This project expands upon Cordaro's original work, transitioning from Excel to Python. This shift not only automates the process of data collection and transformation but also enhances the visualisation.
 
+Ground station magnetometers are sensitive instruments designed to measure the Earth's magnetic field, specifically its intensity and direction. They work on the principle of Faraday's law of electromagnetic induction, where changes in a magnetic field can induce an electric current in a conductor. When functioning normally, these devices provide a steady stream of data that reflects the Earth's natural magnetic field, influenced by factors such as solar activity and the Earth's own geodynamo.
+
+However, substantial local disruptions like earthquakes or explosions can create noticeable anomalies in the magnetometer readings. This is because these events can cause rapid shifts in the distribution of magnetic materials in the Earth's crust, leading to temporary alterations in the local magnetic field. These changes appear as spikes or dips in the magnetometer data, providing indirect evidence of the event's occurrence.
+
 There is potential for further development in correlating the data streams from different ground stations. This enhancement would allow for more precise geospatial analysis, rather than just the temporal analysis presented here.
 
-![Idealised Explosion Pattern](/assets/explosion-pattern.jpg)
-*Figure 2: Idealised Explosion Pattern*
+## Methodology
 
-The methodology involves comparing the collected data to an "Ideal Explosion Pattern" as it would appear on a magnetometer, as demonstrated by Cordaro. This comparison produces a correlation measure between the two. A high correlation suggests that the sensors may have detected an explosion. The data for this pattern, at a 30-second sample rate, is presented in Table 1.1. Table 1.2 demonstrates the author's data at a 15-second sample rate.
+![Idealised Explosion Pattern](/assets/explosion-pattern.jpg)
+*Figure 2: Idealised Explosion Pattern - Richard Cordaro*
+
+In signal analysis, a 'pattern' or 'mask' is often used to identify specific patterns in data. This involves comparing a known pattern or template (the mask) to the signal data in a sliding window manner. Essentially, the mask is moved through the data point by point, and at each step, a comparison is made between the signal within the window and the mask. This comparison often involves calculating a similarity measure, such as a correlation coefficient. If the similarity measure exceeds a certain threshold, it suggests that the pattern exists in the signal at that point. This technique is particularly useful in identifying repeating patterns or anomalies within large datasets, such as in time series data or images.
+
+The methodology here uses data from INTERMAGNET compared to an "Ideal Explosion Pattern" provided by Cordaro. A high correlation suggests that the sensors may have detected an explosion. The data for this pattern, at a 30-second sample rate, is presented in Table 1.1. Table 1.2 demonstrates the author's data at a 15-second sample rate.
+
+The choice of a 5-minute window is not arbitrary but can be adjusted based on the specific requirements of your analysis. A larger window might smooth out the results, reducing the impact of short-lived anomalies, while a smaller window could make the results more sensitive to brief, intense anomalies, such as explosions. The choice of window size is a trade-off between sensitivity and specificity, and should be guided by your understanding of the nature of the data and the phenomena you're investigating.
 
 #### Table 1.1: Ideal Explosion Pattern (30-second sample rate) - Richard Cordaro
 
@@ -63,9 +73,12 @@ The table presented by RC the "Ideal Explosion Pattern" at a 30-second sample ra
 
 As with Table 1.1, this table represents the "Ideal Explosion Pattern", but at a 15-second sample rate. The 'Time' column represents time in seconds from the onset of the explosion, while the 'Relative Amplitude' column represents the magnitude of the magnetic anomaly detected.
 
-The choice of a 5-minute window is not arbitrary but can be adjusted based on the specific requirements of your analysis. A larger window might smooth out the results, reducing the impact of short-lived anomalies, while a smaller window could make the results more sensitive to brief, intense anomalies, such as explosions. The choice of window size is a trade-off between sensitivity and specificity, and should be guided by your understanding of the nature of the data and the phenomena you're investigating.
+## Retreive Data
 
-## 1. Retreive Data
+### Data Source
+
+- INTERMAGNET, the International Real-time Magnetic Observatory Network, is a global organization that operates a network of observatories to monitor Earth's magnetic field. It provides high-quality, real-time geomagnetic data to the scientific community and promotes the adoption of modern measurement standards.
+- The HAPI (Heliophysics Data Application Programmer's Interface) servers offer a robust and efficient method for handling time series data. With the HAPI specification, data available from a HAPI server can be easily accessed and loaded into an array using a single command, eliminating the need to download data files and write custom file reader programs. This streamlined approach enables seamless data access for space science and space weather data, making it an ideal choice for anyone working with time series data in these field
 
 The Intermagnet team has supplied their data onto the HAPI servers, which allows for easy access to the day's data through `hapiclient`. To use it in your environment, install it using `pip install hapiclient`. It might take a little time to figure it out as the documentation for this particular data source seems to be outdated or non-existent.
 
@@ -118,7 +131,7 @@ This table provides a selection of ground stations that can be used to retrieve 
 
 Note that the ground stations in Kiev, Ukraine, and Iznik, Turkey are no longer transmitting data.
 
-## 2. Calculate a deviation from the minimum
+## Calculate a deviation from the minimum
 
 Following Richard Cordaro's workflow, he subtracts the minimum value from the y data. This adjustment allows for a better comparison with the Idealised Explosion Pattern. The code below accomplishes the same, but using `pandas` gives us the capability to easily process all three cardinal directions simultaneously.
 
@@ -131,7 +144,7 @@ Following Richard Cordaro's workflow, he subtracts the minimum value from the y 
 
 This block of code calculates the deviation from the minimum for each component of the magnetic field (Bx, By, Bz). The result is a new DataFrame where each field component has been shifted such that its minimum value is now 0. This transformation enhances the visibility of variations in the data and simplifies the comparison with the Ideal Explosion Pattern.
 
-## 3. Magnetic Anomaly Detection and Correlation Analysis
+## Magnetic Anomaly Detection and Correlation Analysis
 
 In the next step, we'll define a function that applies a correlation analysis to our data. This involves a sliding window approach, comparing a portion of the collected data to our Idealised Explosion Pattern. It also identifies potential anomalies where the correlation is above a defined sensitivity level.
 
@@ -198,7 +211,7 @@ In the function magnetic_anomaly_detection, correlations greater than the specif
 
 The results are then processed in steps that correspond to the sample size. For each 5-minute interval, the number of significant correlations is counted and this count is assigned to the time at the beginning of that interval. This way, the function generates a time-series of counts of significant correlations, which could be interpreted as potential magnetic anomalies.
 
-## 4. Results
+## Results
 
 Using the code above you are able to loop through serveral ground stations to collect and analysis their data. Below are several ploteed charts showing this.
 
