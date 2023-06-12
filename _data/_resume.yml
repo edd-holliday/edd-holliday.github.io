@@ -1,4 +1,50 @@
-education:
+- work_experience: "Professional Career"
+  - job_title: "Senior Research Associate"
+    company: "Metrea Management"
+    duration: "Feb 2021 - Apr 2023"
+    achievements: "Devised cost-effective aerial firefighting solution through data-driven market and supply analysis, technology comparison, and pricing modeling. Resulted in new business unit. Conducted product analysis, identified a key software risk in a US company. Wrote Investment Memorandum, resulting in USD 10M acquisition and potential acquisition of second company. Identified and presented a strategic opportunity for investment from Metrea's VC BU into Fossa Systems."
+
+  - job_title: "Military Strategic Effects Advisor"
+    company: "Ministry of Defence, London"
+    duration: "Dec 2019 - Feb 2021"
+    achievements: "Supported the Cabinet Office and Defence decision making process during COVID-19 crisis through leading a military and QinetiQ team. Rapidly developing a product utilising Cross Government and Open Source Data Sets; Target Audience Analysis and Information Activities. Modelling of the for strat prediction of deployment of resources when and where. Analysis of seconded to a team due to my technical background to develop modelling on ??? to inform resourceing. The work and anlysis we did on selecting data and injesting data sources was then used by NHS-X."
+
+  - job_title: "Liaison Officer"
+    company: "NATO Special Operations HQ, Afghanistan"
+    duration: "May 2019 - Dec 2019"
+    achievements: "Represented NATO Special Operations units within a US Strategic Level Command in order to monitor, report, and identify and gain resources for operations. Understanding of strategic requiremnts. Directly helped shape UK Defence Policy through the reporting of plans, changes in policy and activity in Afghanistan."
+
+  - job_title: "Operational Plans Officer"
+    company: "3rd & 5th Gp, Green Berets, Levant"
+    duration: "Aug 2018 - Feb 2019"
+    achievements: "Project Manager for USSOF and its partner force and OGDs, in support of the Coalition effort to defeat ISIS. This included responsibility for the planning and management of operational and strategic activity, including the contracted deployment, training and use of tactical and strategic UAS and kinetic and non-kinetic Counter-UAS systems. In co-ordination with the UN and US State Department, I planned and monitored two of the largest ground aid convoys ever conducted by the UN. The plan was briefed in the White House for approval prior to its execution."
+
+  - job_title: "Planning Officer"
+    company: "20 Armoured Infantry Brigade, Germany"
+    duration: "Dec 2015 - Aug 2018"
+    achievements: "As part of a small team; managed and delivered projects, co-ordinated resources, wrote policy, and developed the annual budgetary cycle to prepare multinational units for deployment across the globe in support of NATO. The planning, execution, delivery and reporting of Very High Readiness exercises in Germany and the UK. Created the financial model for an organisation of 5000 people to anticipate training and operational spending and information strategic decision making."
+
+  - job_title: "Operations Officer"
+    company: "38 Brigade, Northern Ireland"
+    duration: "May 2016 - Dec 2016"
+    achievements: "Monitored and controlled military activity and provided military support to the Police in Northern Ireland. This included the analysis of I planned, controlled, monitored and reported on the use of defence support to the civil authorities in the collection and destruction of hazardous chemical from 55 schools across Northern Ireland."
+
+  - job_title: "Infantry Platoon Commander"
+    company: "4th Battalion, The Rifles, Aldershot"
+    duration: "Jul 2015 - May 2016"
+    achievements: "Prepared and managed a team of 30 people to operate in a multitude of environments. This included career and training management and having full responsibility for their welfare and discipline. Training for and leading a platoon on exercise in the jungle in Belize."
+
+  - job_title: "Regimental Signals Officer"
+    company: "Household Cavalry Regiment, Windsor"
+    duration: "Sep 2014 - Jul 2015"
+    achievements: "Planned and managed personnel and equipment to allow a unit of 500 people and 100 vehicles to reliably and securely communicate over a variety of spectrums at distance, while maintaining manoeuvrability across a battlefield. Achieving the highest level report for the planning and delivery of communications during a training exercise."
+
+  - job_title: "Reconnaissance Troop Leader"
+    company: "Household Cavalry Regiment, London & Windsor"
+    duration: "Jan 2012 - Sep 2014"
+    achievements: "Led, prepared and managed a small team and fleet of vehicles to operate independently at distance, anticipating the needs of their commander and delivering assessment on activity in unfamiliar environments. This included the career management and development of junior soldiers and responsibility for their discipline and welfare; and at time management of 35 horses and soldiers for State Ceremonial occasions. Training and leading a Reconnaissance Troop on exercise in Canada. Involvement in all major Ceremonial Parades in London in 2013."
+
+- education: "Education"
   - degree: "Leadership and Management, Level 5 Certificate"
     university: "Chartered Managers Institute"
 
@@ -7,58 +53,3 @@ education:
 
   - degree: "Computer Science, BSc (Hons)"
     universtity: "Durham"
-
-work_experience:
-  - job_title: "Senior Research Associate"
-    company: "Metrea Management"
-    duration: "Feb 2021 - Apr 2023"
-    achievements: 
-      - "Devised cost-effective aerial firefighting solution through data-driven market and supply analysis, technology comparison, and pricing modeling. Resulted in new business unit. Conducted product analysis, identified a key software risk in a US company. Wrote Investment Memorandum, resulting in USD 10M acquisition and potential acquisition of second company. Identified and presented a strategic opportunity for investment from Metrea's VC BU into Fossa Systems."
-
-  - job_title: "Military Strategic Effects Advisor"
-    company: "Ministry of Defence, London"
-    duration: "Dec 2019 - Feb 2021"
-    achievements: 
-      - "Supported the Cabinet Office and Defence decision making process during COVID-19 crisis through leading a military and QinetiQ team. Rapidly developing a product utilising Cross Government and Open Source Data Sets; Target Audience Analysis and Information Activities. Modelling of the for strat prediction of deployment of resources when and where. Analysis of seconded to a team due to my technical background to develop modelling on ??? to inform resourceing. The work and anlysis we did on selecting data and injesting data sources was then used by NHS-X."
-
-  - job_title: "Liaison Officer"
-    company: "NATO Special Operations HQ, Afghanistan"
-    duration: "May 2019 - Dec 2019"
-    achievements: 
-      - "Represented NATO Special Operations units within a US Strategic Level Command in order to monitor, report, and identify and gain resources for operations. Understanding of strategic requiremnts. Directly helped shape UK Defence Policy through the reporting of plans, changes in policy and activity in Afghanistan."
-
-  - job_title: "Operational Plans Officer"
-    company: "3rd & 5th Gp, Green Berets, Levant"
-    duration: "Aug 2018 - Feb 2019"
-    achievements: 
-      - "Project Manager for USSOF and its partner force and OGDs, in support of the Coalition effort to defeat ISIS. This included responsibility for the planning and management of operational and strategic activity, including the contracted deployment, training and use of tactical and strategic UAS and kinetic and non-kinetic Counter-UAS systems. In co-ordination with the UN and US State Department, I planned and monitored two of the largest ground aid convoys ever conducted by the UN. The plan was briefed in the White House for approval prior to its execution."
-
-  - job_title: "Planning Officer"
-    company: "20 Armoured Infantry Brigade, Germany"
-    duration: "Dec 2015 - Aug 2018"
-    achievements: 
-      - "As part of a small team; managed and delivered projects, co-ordinated resources, wrote policy, and developed the annual budgetary cycle to prepare multinational units for deployment across the globe in support of NATO. The planning, execution, delivery and reporting of Very High Readiness exercises in Germany and the UK. Created the financial model for an organisation of 5000 people to anticipate training and operational spending and information strategic decision making."
-
-  - job_title: "Operations Officer"
-    company: "38 Brigade, Northern Ireland"
-    duration: "May 2016 - Dec 2016"
-    achievements: 
-      - "Monitored and controlled military activity and provided military support to the Police in Northern Ireland. This included the analysis of I planned, controlled, monitored and reported on the use of defence support to the civil authorities in the collection and destruction of hazardous chemical from 55 schools across Northern Ireland."
-
-  - job_title: "Infantry Platoon Commander"
-    company: "4th Battalion, The Rifles, Aldershot"
-    duration: "Jul 2015 - May 2016"
-    achievements: 
-      - "Prepared and managed a team of 30 people to operate in a multitude of environments. This included career and training management and having full responsibility for their welfare and discipline. Training for and leading a platoon on exercise in the jungle in Belize."
-
-  - job_title: "Regimental Signals Officer"
-    company: "Household Cavalry Regiment, Windsor"
-    duration: "Sep 2014 - Jul 2015"
-    achievements: 
-      - "Planned and managed personnel and equipment to allow a unit of 500 people and 100 vehicles to reliably and securely communicate over a variety of spectrums at distance, while maintaining manoeuvrability across a battlefield. Achieving the highest level report for the planning and delivery of communications during a training exercise."
-
-  - job_title: "Reconnaissance Troop Leader"
-    company: "Household Cavalry Regiment, London & Windsor"
-    duration: "Jan 2012 - Sep 2014"
-    achievements: 
-      - "Led, prepared and managed a small team and fleet of vehicles to operate independently at distance, anticipating the needs of their commander and delivering assessment on activity in unfamiliar environments. This included the career management and development of junior soldiers and responsibility for their discipline and welfare; and at time management of 35 horses and soldiers for State Ceremonial occasions. Training and leading a Reconnaissance Troop on exercise in Canada. Involvement in all major Ceremonial Parades in London in 2013."
