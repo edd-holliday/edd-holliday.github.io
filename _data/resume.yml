@@ -1,4 +1,4 @@
-- work_experience: "Professional Career"
+work_experience:
   - job_title: "Senior Research Associate"
     company: "Metrea Management"
     duration: "Feb 2021 - Apr 2023"
@@ -44,7 +44,7 @@
     duration: "Jan 2012 - Sep 2014"
     achievements: "Led, prepared and managed a small team and fleet of vehicles to operate independently at distance, anticipating the needs of their commander and delivering assessment on activity in unfamiliar environments. This included the career management and development of junior soldiers and responsibility for their discipline and welfare; and at time management of 35 horses and soldiers for State Ceremonial occasions. Training and leading a Reconnaissance Troop on exercise in Canada. Involvement in all major Ceremonial Parades in London in 2013."
 
-- education: "Education"
+education: "Education"
   - degree: "Leadership and Management, Level 5 Certificate"
     university: "Chartered Managers Institute"
 

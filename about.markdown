@@ -14,12 +14,13 @@ Due to my diverse experiences, I consider myself more of a generalist than a spe
 
 Thank you for visiting, and feel free to reach out for a copy of my resume.
 
+
 ## Work
 
 {% for experience in site.data.resume.work_experience %}
-{{ experience.job_title }}
-{{ experience.company }} - {{ experience.duration }}
-{{ experience.achievements }}
+    <h2>{{ experience.job_title }}</h2>
+    <h2>{{ experience.company }} </h2> - {{ experience.duration }}
+    {{ experience.achievements }}
 {% endfor %}
 
 ## Education
