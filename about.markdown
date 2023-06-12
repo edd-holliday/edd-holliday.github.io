@@ -15,11 +15,11 @@ Due to my diverse experiences, I consider myself more of a generalist than a spe
 Thank you for visiting, and feel free to reach out for a copy of my resume.
 
 
-## Work
+## Professional
 
 {% for role in site.data.resume %}
-    <h2>{{ role.job_title }}</h2>
-    <h2>{{ role.company }} </h2> - {{ role.duration }}
+    <h2> {{ role.job_title }} </h2>
+    <h3> {{ role.company }} </h3>  _{{ role.duration }}_
     {{ role.achievements }}
 {% endfor %}
 
@@ -27,5 +27,5 @@ Thank you for visiting, and feel free to reach out for a copy of my resume.
 
 {% for education in site.data.education %}
     <h2>{{ education.degree }}</h2>
-    **{{ education.university }}** _{{ education.duration }}_
+    <h3>{{ education.university }}</h3> _{{ education.duration }}_
 {% endfor %}
