@@ -5,46 +5,93 @@ date:   2023-03-08 12:25:44 +0100
 categories: network, banks, systemic risk
 use_math: true
 tags: network, banks, systemic risk
-published: false
+published: True
 ---
 
+In finance, systemic risk refers to the risk that the fluctuations in the overall market, or a significant portion of it, could lead to a significant drop in stock prices, potentially leading to a financial crisis. It's the inherent market-wide risk that can't be eliminated through diversification.
+
+On the other hand, when talking about  systems or networks, systemic risk is the potential for the entire system to fail due to cascading failures within the interconnected networks. This could be due to a single point of failure that triggers a domino effect, or due to a simultaneous failure of several nodes. It's about the fragility of the whole system as a network of interconnected parts, where the failure of one part can cause the failure of the whole system.
+
+In essence, while systemic risk in finance is about market-wide shocks affecting individual investments, systemic risk in networks is about how individual failures can result in a system-wide breakdown.
+
+The _BankRank_ algorithm is intended to rank the nodes (institutions) in order of criticality, how likely they are to cause a system failure, in the case of their failure. To determine this, BankRank considers factors such as the size of the institution, its degree of interconnectedness with other institutions, and its centrality within the network. This way, it effectively assesses the potential contribution of each node to systemic risk.
+
+## Motivation
+
 This project was born out of reading 'The 10 Equations that Rule the World' by David Sumpter. Chapter 5 of the book delves into the idea of the 'influence equation', which shows shows how a network settles against certain weights with the weight of each being the influence of each node. This is the heart of Google’s search algorithm.
+
+The notion of centrality was developed by sociologists. The influence of any node in a network stems from the other nodes to which it is connected (denoted by an adjacency matrix); these nodes in turn are affected by the nodes to which they are connected, and so on.
+
+Centrality was first defined in 1987 and popularised as Google’s PageRank algorithm in 1998. Hence this Algorithms name.
 
 At the time I was reading the book the banks SVB and Credit Suisse were in crisis and there was lots of discussion about banking system failure and systemic risk. From immenant banking systemin collapse to 'all is fine'. However, no where could I find how you might measure systemic risk in the banking system.
 
 When Credit Suisse was bought out by UBS, there were reports of its shareholders having to take a hair cut and a list of institutional investors was circulated from twitter. this led me to thinknig how to model the banking system as a graph and finding the stationary distribution.
 
-# Systemic Risk
+## Modelling the Banking System
 
-Risk in a connected netwrok arises fromt compromised nodes and their connections.
+### Data
 
-# Modelling the Banking System
+To run the algorithm a hypothetical dataset has been created. However future iterations would use the _13F - Holding Reports_ that give details of the large investors holdings.
 
-## Assumptions
+### Assumptions
 
-- Banks and instititional investors invest in other banks.
-- A banks collapse has a negative impact on the assets of its investors
+- Banks and institutional investors invest in each other.
+- A bank's collapse has a negative impact on the assets of its investors
 - Large investors selling an asset can have a negative impact on the price of that asset.
 - A bank and an Institional Investor are nodes. There are $n$ nodes in the graph
-- The investments between nodes are directional edges.
+- The investments between nodes are directed edges.
 - The banking sector is a directional graph $G(V,E)$ where:
   - $V R^n$ is the set of banks or institional investors
   - $E R^{n x n}$ is the edge set denoting the which nodes are connected together through invesmtents and holdings.
-  - The edge set comprimises elements
-  - The graph is directional, such that $E_{ij} \ne E_{ji}$
-- In the simple model the network is represented by an $(n x n)$ adjacency matrix with all elements in ${0,1}$.
-
-## Data
-
-13F - Holding reports give the details of the large investors holdings.
-
-# Notation
-
-Assume that the banking system comprises n no
+  - Each element in $ E $ represents an investment from one institution to another.
+  - The graph is directional, such that $E_{ij} \ne E_{ji}$ for all $ i \ne j $
+- It is assumed that all nodes have the capacity to influence the system, albeit to different degrees.
+- It is assumed that the failure of a node is not necessarily independent of the failure of another node.
 
 ## Simple Model
 
-With these assumption the banking sector can be modelled as a directional graph, with banks and institutional investors as nodes and their investments as edges. The simple model allows for some initial analysis of the graph, to find the density etc. With historical data from the SEC it is possible to understand how the banking sector has changed over time against these metrics. Theorertical methods can then be used to understand the risk of a local shock propogates throughout a given system due to contagion effects. A definition of a resilient network and criteria allows the classification of netwroks as resilient or non-resilient.
+ In the simplified version of the model, the network is represented by an $(n x n)$ adjacency matrix with all elements in ${0,1}$, where $1$ indicates an investment from node $i$ to node $j$, and $0$ indicates no investment.
+
+ The simple model allows for some initial analysis of the graph, to find the density etc. With historical data from the SEC it is possible to understand how the banking sector has changed over time against these metrics. Theorertical methods can then be used to understand the risk of a local shock propogates throughout a given system due to contagion effects. A definition of a resilient network and criteria allows the classification of netwroks as resilient or non-resilient.
+
+ The idea surronding the simplified model come from Sanjiv Ranjan Das' [Matrix Metrics: Network-Based Systemic Risk Scoring](https://srdas.github.io/Papers/JAI_Das_issue.pdf)
+
+ A simple example of the directed graph would be:
+
+$$ 
+
+G_{simple} = 
+
+\begin{bmatrix}
+1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 \\
+0 & 1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 0 \\
+1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & 0 \\
+0 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & 0 & 1 \\
+0 & 1 & 1 & 1 & 1 & 0 & 1 & 0 & 0 & 1 \\
+1 & 0 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+1 & 1 & 0 & 0 & 0 & 1 & 1 & 0 & 1 & 0 \\
+0 & 1 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 0 \\
+1 & 1 & 0 & 0 & 1 & 0 & 0 & 1 & 1 & 0 \\
+\end{bmatrix}
+
+$$
+
+Which would produce a network:
+
+<a href="/assets/simple_model_1.png" target="_blank">
+  <img src="/assets/simple_model_1.png" alt="Simple Model of a Banking System" width="700" height="400">
+</a>
+<p style="text-align: center;"><i>Figure 1: Simple Model of a Banking System</i></p>
+
+Using the Simple model we can use the idea of centrality to rank the banks into order. In a complicated network this is not easier to acheive, as described above there is a circularity between the connections of the node. There are several measures of centrality, but we will use the Eigenvectro centrality of a node, which is a measure of the influence a node has on a network.
+
+$ \lambda x = E x $
+
+<a href="/assets/simple_model_1_centrality.png" target="_blank">
+  <img src="/assets/simple_model_1_centrality.png" alt="Simple Model Centrality Score" width="700" height="400">
+</a>
+<p style="text-align: center;"><i>Figure 1: Simple Model Centrality Score</i></p>
 
 ## Indepth model
 

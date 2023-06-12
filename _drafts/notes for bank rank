@@ -1,0 +1,7 @@
+The criticality of a node in the model is defined as the product of its compromise level and its centrality. For each node $V$ we define the level of compromise as $ C_i >= 0 $. The Comprmise Vector for all nodes is $ C = [C_1, C_2, ..., C_n]^T \in {0,1,2} $. Where a higher score is a higher comprimise rating. In a practical sense the Compromise score could be equate to a function of Interest Rates, Holding, Deposits, Unisurece deposties etc. 
+
+Our (arbutiary) compromise vector is:
+
+$$
+C = \begin{bmatrix}1 \\ 0 \\ 0 \\ 1 \\ 2 \\ 2 \\ 2 \\ 2 \\ 1 \\ 0 \end{bmatrix}
+$$
