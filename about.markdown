@@ -17,15 +17,15 @@ Thank you for visiting, and feel free to reach out for a copy of my resume.
 
 ## Work
 
-{% for experience in site.data.resume.work_experience %}
-    <h2>{{ experience.job_title }}</h2>
-    <h2>{{ experience.company }} </h2> - {{ experience.duration }}
-    {{ experience.achievements }}
+{% for role in site.data.resume %}
+    <h2>{{ role.job_title }}</h2>
+    <h2>{{ role.company }} </h2> - {{ role.duration }}
+    {{ role.achievements }}
 {% endfor %}
 
 ## Education
 
-{% for education in site.data.resume.education %}
-### {{ education.degree }}
-**{{ education.university }}** _{{ education.duration }}_
+{% for education in site.data.education %}
+    <h2>{{ education.degree }}</h2>
+    **{{ education.university }}** _{{ education.duration }}_
 {% endfor %}
