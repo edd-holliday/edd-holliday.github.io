@@ -2,8 +2,10 @@
 layout: draft
 title:  "BankRank Algorithm"
 date:   2023-03-08 12:25:44 +0100
-categories: systems, banks, systemic risk
+categories: network, banks, systemic risk
 use_math: true
+tags: network, banks, systemic risk
+published: false
 ---
 
 This project was born out of reading 'The 10 Equations that Rule the World' by David Sumpter. Chapter 5 of the book delves into the idea of the 'influence equation', which shows shows how a network settles against certain weights with the weight of each being the influence of each node. This is the heart of Google’s search algorithm.
