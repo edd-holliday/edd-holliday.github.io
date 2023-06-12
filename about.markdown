@@ -19,8 +19,8 @@ Thank you for visiting, and feel free to reach out for a copy of my resume.
 <ul>
 {% for role in site.data.resume %}
     <li>
-        <h2> {{ role.job_title }} </h2>
-        <h3> {{ role.company }} </h3>  _{{ role.duration }}_
+        <h3> {{ role.job_title }} </h3>
+        <h4> {{ role.company }} - {{ role.duration }} </h4>
         {{ role.achievements }}
     </li>
 {% endfor %}
@@ -30,8 +30,8 @@ Thank you for visiting, and feel free to reach out for a copy of my resume.
 <ul>
 {% for education in site.data.education %}
     <li>
-        <h2>{{ education.degree }}</h2>
-        <h3>{{ education.university }}</h3> _{{ education.duration }}_
+        <h3>{{ education.degree }}</h3>
+        <h4>{{ education.university }}</h4> {{ education.duration }}
     </li>
 {% endfor %}
 </ul>
