@@ -16,16 +16,22 @@ Thank you for visiting, and feel free to reach out for a copy of my resume.
 
 
 ## Professional
-
+<ul>
 {% for role in site.data.resume %}
-    <h2> {{ role.job_title }} </h2>
-    <h3> {{ role.company }} </h3>  _{{ role.duration }}_
-    {{ role.achievements }}
+    <li>
+        <h2> {{ role.job_title }} </h2>
+        <h3> {{ role.company }} </h3>  _{{ role.duration }}_
+        {{ role.achievements }}
+    </li>
 {% endfor %}
+</ul>
 
 ## Education
-
+<ul>
 {% for education in site.data.education %}
-    <h2>{{ education.degree }}</h2>
-    <h3>{{ education.university }}</h3> _{{ education.duration }}_
+    <li>
+        <h2>{{ education.degree }}</h2>
+        <h3>{{ education.university }}</h3> _{{ education.duration }}_
+    </li>
 {% endfor %}
+</ul>
