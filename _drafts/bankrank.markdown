@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: draft
 title:  "BankRank Algorithm"
 date:   2023-03-08 12:25:44 +0100
 categories: systems, banks, systemic risk
