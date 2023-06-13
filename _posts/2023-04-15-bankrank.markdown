@@ -1,7 +1,7 @@
 ---
-layout: draft
+layout: post
 title:  "BankRank Algorithm"
-date:   2023-03-08 12:25:44 +0100
+date:   2023-04-15 12:25:44 +0100
 categories: network, banks, systemic risk
 use_math: true
 tags: network, banks, systemic risk
@@ -55,8 +55,6 @@ To run the algorithm a hypothetical dataset has been created. However future ite
 
  The simple model allows for some initial analysis of the graph, to find the density etc. With historical data from the SEC it is possible to understand how the banking sector has changed over time against these metrics. Theorertical methods can then be used to understand the risk of a local shock propogates throughout a given system due to contagion effects. A definition of a resilient network and criteria allows the classification of netwroks as resilient or non-resilient.
 
- The idea surronding the simplified model come from Sanjiv Ranjan Das' [Matrix Metrics: Network-Based Systemic Risk Scoring](https://srdas.github.io/Papers/JAI_Das_issue.pdf)
-
  A simple example of the directed graph would be:
 
 $$ 
@@ -95,4 +93,5 @@ $ \lambda x = E x $
 
 ## Indepth model
 
-This takes the simple model a step further, using the idea of the 'Influencer equation' and PageRank alogrithm to identify which banks are most at risk of causing contagion within the system. It creates weights.
+This takes the simple model a step further, by weighting the edges.
+
