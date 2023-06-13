@@ -55,22 +55,25 @@ To run the algorithm a hypothetical dataset has been created. However future ite
 
  The simple model allows for some initial analysis of the graph, to find the density etc. With historical data from the SEC it is possible to understand how the banking sector has changed over time against these metrics. Theorertical methods can then be used to understand the risk of a local shock propogates throughout a given system due to contagion effects. A definition of a resilient network and criteria allows the classification of netwroks as resilient or non-resilient.
 
- A simple example of the directed graph would be:
+ A simple example of the directed graph for 10 Banks (B1, B2,..., B10) would be:
 
-$$ 
+$$
 
-G_{simple} = 
+G_{simple} =
 
 \begin{bmatrix}
-1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 1 \\
-0 & 1 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 0 \\
-1 & 0 & 1 & 0 & 1 & 1 & 0 & 1 & 1 & 0 \\
-0 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & 0 & 1 \\
-0 & 1 & 1 & 1 & 1 & 0 & 1 & 0 & 0 & 1 \\
-1 & 0 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
-1 & 1 & 0 & 0 & 0 & 1 & 1 & 0 & 1 & 0 \\
-0 & 1 & 0 & 1 & 1 & 1 & 1 & 1 & 0 & 0 \\
-1 & 1 & 0 & 0 & 1 & 0 & 0 & 1 & 1 & 0 \\
+
+0 & 0 & 0 & 1 & 0 & 0 & 1 & 0 & 1 & 0 \\
+1 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+1 & 1 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 1 & 0 & 1 & 0 & 0 & 0 & 1 \\
+1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 1 & 0 \\
+
 \end{bmatrix}
 
 $$
@@ -86,12 +89,17 @@ Using the Simple model we can use the idea of centrality to rank the banks into 
 
 $ \lambda x = E x $
 
+The eigenvector of the graph is easy to find with `NetworkX` package for python. However it must then be normalised.
+
 <a href="/assets/simple_model_1_centrality.png" target="_blank">
   <img src="/assets/simple_model_1_centrality.png" alt="Simple Model Centrality Score" width="700" height="400">
 </a>
 <p style="text-align: center;"><i>Figure 1: Simple Model Centrality Score</i></p>
 
+
+
+Figure 1. shows that Bank 1 is the most influential.
+
 ## Indepth model
 
 This takes the simple model a step further, by weighting the edges.
-
