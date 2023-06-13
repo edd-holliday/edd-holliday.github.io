@@ -81,7 +81,7 @@ $$
 Which would produce a network:
 
 <a href="/assets/simple_model_1.png" target="_blank">
-  <img src="/assets/simple_model_1.png" alt="Simple Model of a Banking System" width="700" height="400">
+  <img src="/assets/simple_model_1.png" alt="Simple Model of a Banking System" width="400" height="400">
 </a>
 <p style="text-align: center;"><i>Figure 1: Simple Model of a Banking System</i></p>
 
