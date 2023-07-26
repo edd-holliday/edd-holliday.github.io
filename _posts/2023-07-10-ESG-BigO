@@ -1,14 +1,12 @@
 ---
 layout: post
-title:  "Analysising Environmental Impact of Algorithms"
+title:  "Using BigO Notation to Measure Energy Consumption of Algorithms"
 date:   2023-07-10 12:25:44 +0100
 categories: ESG, BigO Notation
 use_math: true
 tags: Algorithmic Trading, ESG Analysis
 published: True
 ---
-
-# Using BigO Notation to Measure Energy Consumption of Algorithms
 
 In the ever-growing digital landscape, optimising algorithms for energy efficiency is increasingly critical. Understanding how much energy an algorithm consumes is vital for sustainability and reducing the carbon footprint of the IT sector. In this blog post, we'll explore the concept of using BigO notation to measure the energy consumption of algorithms and provide an example to illustrate the idea.
 
