@@ -28,6 +28,10 @@ The resources here are built on top of the comprehensive list by @WifeyAlpha.
 
 - [QuantConnect](https://www.quantconnect.com/learning/articles/): Series of articles covering Financial Python, Options Theory, Options Applied, Alternative Data.
 
+- [Machine Learning for Quantitative Trading Webinar with Dr. Ernie Chan](https://www.youtube.com/watch?app=desktop&v=72aEDjwGMr8): Quantitative trading and algorithmic trading expert Dr. Ernie Chan teaches you machine learning in quantitative finance. It covers; The pros and cons of applying machine learning to trading and investing; What are the best types of data for ML algorithms; What are the ML algorithms most useful to traders and investors? Can the machine really replace humans in trading?
+
+- [George Soros Lecture Series: Financial Markets](https://www.youtube.com/watch?v=RHSEEJDKJho)
+
 ### Maths
 
 - [Review of Probability Theory](http://cs229.stanford.edu/section/cs229-prob.pdf): A concise review of probability theory with an emphasis on applications in machine learning and data science.
@@ -77,6 +81,8 @@ The resources here are built on top of the comprehensive list by @WifeyAlpha.
 - [Machine Learning in Asset Management](https://github.com/firmai/machine-learning-asset-management/blob/master/README.md)
 
 - [Hedge Fund Risk and Drawdowns](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3783426): A review hedge fund risk using various commonly used measures including market betas, correlations, and porfolio drawdowns.
+
+- [Advanced Machine Learning with Basic Excel](https://www.datasciencecentral.com/advanced-machine-learning-with-basic-excel/)
 
 - [Quant hedge fund primer: demystifying quantitative strategiest](https://www.aurum.com/insight/thought-piece/quant-hedge-fund-strategies-explained/?utm_source=LINKEDIN&utm_medium=DIRECT+TO+ARTICLE&utm_campaign=QUANT+PRIMER): 
 
@@ -138,6 +144,8 @@ The resources here are built on top of the comprehensive list by @WifeyAlpha.
 
 - [@yarbatman](https://twitter.com/yarbatman): Artem Yasynovskyi, known as Yarbatman, shares market analysis and trading perspectives.
 
+- [@HilltowerRA](https://twitter.com/HilltowerRA): Macro research dedicated to helping individuals, businesses, and institutions navigate the complex worlds of natural resources, geopolitics, and investing.
+
 ### Tools
 
 - [A curated list of insanely awesome libraries, packages and resources for Quants (Quantitative Finance)](https://github.com/wilsonfreitas/awesome-quant)
@@ -157,6 +165,10 @@ The resources here are built on top of the comprehensive list by @WifeyAlpha.
 - [Companion Jupyter notebooks for the book "Deep Learning with Python"](https://github.com/fchollet/deep-learning-with-python-notebooks)
 
 - [Companion Jupyter notebooks for the book "Python for Data Analysis, 3rd Edition"](https://github.com/wesm/pydata-book)
+
+- [LOBSTER: high-frequency, easy to use and latest limit order book data for research](https://lobsterdata.com/index.php)
+
+- [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
 
 ## Books
 
