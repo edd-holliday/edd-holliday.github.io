@@ -98,7 +98,7 @@ The eigenvector of the graph is easy to find with `NetworkX` package for python.
 
 
 
-Figure 1. shows that Bank 1 is the most influential.
+Figure 1. shows that Bank 3 is the most influential and bank 7 is the least. The higher the influence or centrality score the more impactful a failure in that node / bank would be to the entire system. The skewness of the graph also highlights fragility in this banking system model. If the Influence scores were similar it would imply less fragility.
 
 ## Indepth model
 
