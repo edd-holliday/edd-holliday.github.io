@@ -8,7 +8,7 @@ tags: C++, Data Science
 published: True
 ---
 
-A post on installing the [GNU Scientific Library](https://www.gnu.org/software/gsl/doc/html/index.html) on Windows 11 for use with VS Code. 
+A post on installing the [GNU Scientific Library](https://www.gnu.org/software/gsl/doc/html/index.html) on Windows 11 for use with VS Code.
 
 GSL is a C Library for numerical computations. You can use GSL to solve linear system of equations, to dit a curvem numerical integration, statistical calculations etc. My motivation for doing this is part of my journey to learn C++ for its use in  Quantatitive Finance. These are notes so that I can replcate the process later if required.
 
@@ -46,4 +46,4 @@ The libraries should now be installed under the `..\myss64\mingw64\include\` fol
 
 ## Updating the includePath
 
-Add `../msys64/mingw64/include` to the `"includePath"` in the `.vscode/c_ccp_properties.json` file in your workspace.
+Add `..\\msys64\\mingw64\\include"` to the `"includePath"` in the `.vscode/c_ccp_properties.json` file in your workspace.
