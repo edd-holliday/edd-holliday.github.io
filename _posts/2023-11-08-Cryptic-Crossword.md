@@ -100,4 +100,11 @@ sitemap: true
   - Def: BLOOD COMPONENT
   - LITRES = LS, insert into PATERNAL = PA and GRANDMOTHER = MA.
 
-- 
+- **What's white and sparkling as teeth (8)** - CHAMPERS
+  - Def: TEETH
+  - Champagne is white and sparking, also known as CHAMPERS
+
+- **Soldier with large snake taken round curved path(8)** - PARABOLA
+  - Def: CURVED PATH
+  - Soldier = PARA, SNAKE = BOA, insert L from LARGE.
+
