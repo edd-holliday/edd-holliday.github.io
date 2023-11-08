@@ -5,7 +5,7 @@ date:   "2023-11-08 14:41:16 +0000"
 categories: 
 use_math: True
 tags: []
-published: False
+published: True
 author: Edward Holliday 
 permalink:  
 excerpt: "A collection of Cryptic Crossword clues and there answers." # Optional: Remove if not needed
@@ -78,5 +78,13 @@ Remove I from RISHI and put it in front.
 **Soup won't be protection against bad weather (3,4)** - GUM BOOT
 Def: PROTECTION AGAINST BAD WEATHER
 SOUP = GUMBOO, take the even letter from WON'T = OT.
+
+**Magical character one's associated with Black Country (6)** - BRUNEI
+Def: Country
+MAGICAL CHARACTER = RUNE, one = I, BLACK = B
+
+**What might be Chealsea versus Bath? Noisy occasion! (3,5)** - BUN FIGHT
+Def: Chealse Versus Bath? Noisy Occasion!
+What might be CHELSEA = CHELSEA BUN, What might be BATH = BATH FIGHT.
 
 
