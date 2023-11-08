@@ -4,8 +4,9 @@ title:  "Kakovskaya HPP and Magnetometers"
 date:   2023-06-07 12:25:44 +0100
 categories: geopolitics, signals analysis, python
 use_math: true
-tags: geopolitics, signals analysis, python
+tags: [geopolitics, signals analysis, python]
 published: true
+excerpt: A project building on work of [Richard Cordaro](https://twitter.com/rrichcord) using sgnals analysis to detect Magnetic Anomalies to discern phenomena such as explosions, earthquakes, landfalls, or rapid glacial movements and triagulate where the event happaened.
 ---
 
 A project building on work of [Richard Cordaro](https://twitter.com/rrichcord) utilising Magnetic Anomaly Detections to discern phenomena such as explosions, earthquakes, landfalls, or rapid glacial movements.

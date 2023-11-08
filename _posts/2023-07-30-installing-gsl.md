@@ -5,7 +5,8 @@ date:   2023-07-30 12:25:44 +0100
 categories: quantatitive, learning
 use_math: true
 tags: C++, Data Science
-published: True
+published: False
+exceprt: As it says in the title. My lessons learnt from the process.
 ---
 
 A post on installing the [GNU Scientific Library](https://www.gnu.org/software/gsl/doc/html/index.html) on Windows 11 for use with VS Code.

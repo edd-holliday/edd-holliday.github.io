@@ -6,6 +6,7 @@ categories: quantatitive, learning
 use_math: true
 tags: quantatitive, finance
 published: True
+excerpt: A list of resources for Quantatitive Research, Machine Learning and Finance
 ---
 
 The resources here are built on top of the comprehensive list by @WifeyAlpha.

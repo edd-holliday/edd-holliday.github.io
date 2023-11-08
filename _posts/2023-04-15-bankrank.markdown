@@ -4,8 +4,9 @@ title:  "BankRank Algorithm"
 date:   2023-04-15 12:25:44 +0100
 categories: network, banks, systemic risk
 use_math: true
-tags: network, banks, systemic risk
+tags: [network, banks, systemic risk]
 published: True
+excerpt: "A novel way to asses how risky the banking indsutry is, based on network analysis." # Optional: Remove if not needed
 ---
 
 In finance, systemic risk refers to the risk that the fluctuations in the overall market, or a significant portion of it, could lead to a significant drop in stock prices, potentially leading to a financial crisis. It's the inherent market-wide risk that can't be eliminated through diversification.

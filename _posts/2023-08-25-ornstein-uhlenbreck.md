@@ -1,11 +1,12 @@
 ---
 layout: post
-title:  "Mean reversion mode for Soft Commodities"
+title:  "Mean reversion model for Soft Commodities"
 date:   2023-07-30 12:25:44 +0100
 categories: quantatitive, learning
 use_math: true
 tags: python, quantative finance, soft commodities, futures
 published: True
+excerpt: Implemantation of the Ornstein-Uhlenbreck model for mean reveersion.
 ---
 
 Soft commodities, which include items like coffee, sugar, and cotton, play an integral role in global trading. Quantitative finance models offer an approach to understanding, predicting, and optimizing investments in these commodities. Here, we'll delve into a simple quantitative finance model for soft commodities futures.

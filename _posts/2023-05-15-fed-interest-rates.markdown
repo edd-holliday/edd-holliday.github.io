@@ -4,8 +4,9 @@ title:  "FED Interest Rate Predictions"
 date:   2023-04-03 12:25:44 +0100
 categories: interest rates, predictions, machine learning
 use_math: true
-tags: interest rates, predictions, machine learning
+tags: [interest rates, predictions, machine learning]
 published: false
+excerpt: "An imitation of the [FED Watch Tool](https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html) for the BoE." # Optional: Remove if not needed
 ---
 
 
